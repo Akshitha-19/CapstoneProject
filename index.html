@@ -24,41 +24,41 @@ diagnostic approach | Nature</a>
         
 <h2><b> MOTIVATION </b></h2>
         <p> The Motivation of PluMA is: </p>
-          <pre>
-          Interoperability of programming languages.
-          Handling different file formats.
-          Testing and debugging within a larger pipeline.
-          Flexibility and lightweightness.
-          </pre>
+          <p>
+          Interoperability of programming languages.</p>
+          <p> Handling different file formats.</p>
+           <p>Testing and debugging within a larger pipeline.</p>
+           <p>Flexibility and lightweightness.</p>
+          
 <hr>
         
 <h2><b> CHALLENGES </b></h2>
          <p>Few Challenges of PluMA is:</p>
-          <pre>
-          Clone the Repository.
-          Create and build required config File.
-          Test the Built Plugins using single input.
-          Run them with Multiple inputs using kitty.
-         </pre>
+          <p>
+          Clone the Repository.</p>
+           <p>Create and build required config File.</p>
+          <p> Test the Built Plugins using single input.</p>
+          <p> Run them with Multiple inputs using kitty.</p>
+        
 <hr>
 	
 <h2><b> DATA SOURCES </b></h2>
          <p> Paper worked on :</p>
 <a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a>
-          <pre>
+          <p>
           Authors: “Gregory D. Poore, Evguenia Kopylova, Qiyun Zhu, Carolina Carpenter, Serena Fraraccio, Stephen Wandro, Tomasz Kosciolek, Stefan Janssen, Jessica Metcalf, Se Jin Song, Jad Kanbar, Sandrine Miller-Montgomery, Robert Heaton, Rana Mckay, Sandip Pravin Patel, Austin D. Swafford & Rob Knight”
-         </pre>
+         </p>
 <hr>
 <h2><b> DESCRIPTION </b></h2>
       <p> The researchers discovered that they could identify specific patterns of microorganisms in both cancer tissues and blood samples from cancer patients. These patterns, called microbial signatures, were still able to predict the presence of cancer even in early-stage cases and in situations where traditional genetic tests may not be effective. In other words, these microbial signatures were found in both cancer tissues and blood samples, and they were still able to accurately indicate the presence of cancer even in early stages of the disease or when other standard genetic tests may not provide reliable results. Considering the 5 samples each from the below mentioned data from European Nucleotide Archive.
 </p>
-<pre>
-Human Non-Reference Catalog- Plasma microbiome (HIV-Free)
-Plasma microbiome in prostate cancer (PC)
-Skin cutaneous melanoma (SKCM) and lung cancer (LC)
-</pre>
-<img src=“Classification.png" width="100%" height="300px"> </img>
+<p>
+Human Non-Reference Catalog- Plasma microbiome (HIV-Free)</p>
+<p>Plasma microbiome in prostate cancer (PC)</p>
+<p>Skin cutaneous melanoma (SKCM) and lung cancer (LC)
+</p>
+<img src="Classification.png" width="100%" height="300px"> </img>
 	  <hr>
       <h1><b> METHODS AND TOOLS </b></h1>
       <p>Below Mentioned are the list of Plugins and why they are used to build pipeline for the Paper.</p>
@@ -136,7 +136,7 @@ tr:nth-child(even) {
 		<p>Input Plugin format is written as below</p>
 	<pre style="background-color:yellow;">plugin Kraken2Krona  inputfile output.kraken2 outputfile output.krona</pre> 
 		<p>Output is shown as below </p>			     
-	 <img src=“Kraken2Krona.png" width="100%" height="300px"></img>
+	 <img src="Kraken2Krona.png" width="100%" height="300px"></img>
 	  
 	<p>KronaTree: Input for KronaTree plugin is an output file from Kraken2Krona which is a .krona file format and the output is text file format with the syntax name output. This Plugin Maps into biological classification separately into Kingdom, Phylum, class, order , Family genus, Species,strain. </p>
 		 <p>Input Plugin format is written as below</p>
@@ -171,7 +171,7 @@ Sample.Strain.csv
 		<p>Input Plugin format is written as below</p>
 	 <p style="background-color:yellow;">plugin CSVMerge inputfile files.txt outputfile output.merged.csv</p> 
 		<p>Output is shown as below </p>
-<iframe src=“CSVMerge.png" width="100%" height="300px"></iframe>
+<iframe src="CSVMerge.png" width="100%" height="300px"></iframe>
 	<p>KronaGram: Input for KronaGram plugin is an output file from Kraken2Krona which is a .krona file format and the output is the visualization of the classified DNA Sequences into biological classification. </p>
  		<p>Input Plugin format is written as below</p>
 	 <p style="background-color:yellow;">plugin KronaGrame inputfile Kronafiles.txt outputfile KronaGram.html</p> 
