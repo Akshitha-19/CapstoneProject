@@ -1,114 +1,24 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      style="font-size:300%;">Building Pipeline for Bioinformatics Data using PluMA
-    </title>
-    <style>
-      /* Add any styling you want for the report */
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 28px;
-      }
-      
-      h1 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-      
-      h2 {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 40px;
-        margin-bottom: 10px;
-      }
-      
-      p {
-        line-height: 1.5;
-        margin-bottom: 15px;
-      }
-      
-      ul {
-        margin-bottom: 15px;
-        margin-left: 20px;
-      }
-      
-      li {
-        line-height: 1.5;
-      }
-      
-      table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      
-      th, td {
-        padding: 10px;
-        text-align: left;
-        border: 1px solid #ddd;
-      }
-      
-      th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-      }
-      
-      .section {
-        margin-top: 60px;
-        margin-bottom: 40px;
-      }
-      
-      .section-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
-      
-      .subsection {
-        margin-top: 40px;
-        margin-bottom: 20px;
-      }
-      
-      .subsection-title {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-      }
-    </style>
+    <title>style="font-size:300%;">Building Pipeline for Bioinformatics Data using PluMA</title>
+
   </head>
   <body>
-    <h1>Building Pipeline for Bioinformatics Data using PluMA</h1>
-    
-    <div class="section">
-      <h2>Overview and Background</h2>
-      <p>The objective of PluMA is to make it easy for developers to create adaptable and lightweight
-analysis pipelines. These pipelines allow developers to incorporate new algorithms in their
-preferred programming language and debug them alongside other stages in the pipeline that might
-use different file formats and programming languages. To achieve this goal, PluMA uses plugins
-which are available in a large collection in its plugin pool. These plugins are written in various
-programming languages and can be executed sequentially to form a pipeline. PluMA allows users
-to easily add, remove, or replace plugins using its user interface. Since plugins are dynamically
-loaded, users can download PluMA and only the plugins they require from the plugin pool to
-assemble their pipeline. Furthermore, PluMA provides plugins for both CPU and GPU
-implementations.</p>
-    </div>
-    
-    <div class="section">
-      <h2>Goal</h2>
+
+<h1>OVERVIEW AND BACKGROUND</h1>
+      <p>The objective of PluMA is to make it easy for developers to create adaptable and lightweight analysis pipelines. These pipelines allow developers to incorporate new algorithms in their preferred programming language and debug them alongside other stages in the pipeline that might use different file formats and programming languages. To achieve this goal, PluMA uses plugins which are available in a large collection in its plugin pool. These plugins are written in various programming languages and can be executed sequentially to form a pipeline. PluMA allows users to easily add, remove, or replace plugins using its user interface. Since plugins are dynamically loaded, users can download PluMA and only the plugins they require from the plugin pool to assemble their pipeline. Furthermore, PluMA provides plugins for both CPU and GPU implementations.</p>
+
+<h2>GOAL</h2>
        <p>Construct a Pipeline for the Paper </p>
 <a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a>
-
-      
-      <div class="subsection">
-        <h3 class="subsection-title">Objective</h3>
+       
+ <h3>OBJECTIVE</h3>
         <p>The objective of PluMA is to simplify the creation of adaptable and lightweight analysis pipelines that can integrate new algorithms in different programming languages and file formats. PluMA uses plugins, with a collection of pre-existing plugins available, implemented in various programming languages and for both CPU and GPU, that can be run sequentially to form a pipeline. The plugins can be easily added, removed, or replaced through a user interface, and dynamically loaded, enabling users to assemble pipelines quickly and efficiently. Transforming microbiome analysis from individual to community-driven</p>
-      </div>
-      
-      <div class="subsection">
-        <h3 class="subsection-title">Motivation</h3>
+        
+<h4>MOTIVATION</h4>
         <p>The Motivation of PluMA is:</p>
           <pre>
           Interoperability of programming languages.
@@ -116,7 +26,8 @@ diagnostic approach | Nature</a>
           Testing and debugging within a larger pipeline.
           Flexibility and lightweightness.
           </pre>
-        <h4 class="subsection-title">Challenges</h3>
+        
+<h5>CHALLENGES</h5>
          <p>Few Challenges of PluMA is:</p>
           <pre>
           Clone the Repository.
@@ -124,41 +35,115 @@ diagnostic approach | Nature</a>
           Test the Built Plugins using single input.
           Run them with Multiple inputs using kitty.
          </pre>
-      </div>
-    </div>
-    
-    <div class="section">
-      <h2>Methods and tools</h2>
+	
+<h6>DATA SOURCES</h6>
+         <p>Paper worked on :</p>
+<a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
+diagnostic approach | Nature</a>
+          <pre>
+          Authors: “Gregory D. Poore, Evguenia Kopylova, Qiyun Zhu, Carolina Carpenter, Serena Fraraccio, Stephen Wandro, Tomasz Kosciolek, Stefan Janssen, Jessica Metcalf, Se Jin Song, Jad Kanbar, Sandrine Miller-Montgomery, Robert Heaton, Rana Mckay, Sandip Pravin Patel, Austin D. Swafford & Rob Knight”
+         </pre>
+<h7>DESCRIPTION</h7>
+      <p>The researchers discovered that they could identify specific patterns of microorganisms in both cancer tissues and blood samples from cancer patients. These patterns, called microbial signatures, were still able to predict the presence of cancer even in early-stage cases and in situations where traditional genetic tests may not be effective. In other words, these microbial signatures were found in both cancer tissues and blood samples, and they were still able to accurately indicate the presence of cancer even in early stages of the disease or when other standard genetic tests may not provide reliable results. Considering the 5 samples each from the below mentioned data from European Nucleotide Archive.
+</p>
+<pre>
+Human Non-Reference Catalog- Plasma microbiome (HIV-Free)
+Plasma microbiome in prostate cancer (PC)
+Skin cutaneous melanoma (SKCM) and lung cancer (LC)
+</pre>
+      <h8>METHODS AND TOOLS</h8>
       <p>Below Mentioned are the list of Plugins and why they are used to build pipeline for the Paper.</p>
-      
+      <style>
       <table>
-        <thead>
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
           <tr>
             <th>Plugins</th>
             <th>What it does?</th>
           </tr>
-        </thead>
-        <tbody>
+     
           <tr>
             <td>Kraken2</td>
-            <td>Kraken2Translate</td>
-            <td>Kraken2Krona</td>
-            <td>KronaTree</td>
-            <td>KronaCSV</td>
-            <td>CSVMerge</td>
-            <td>KronaGram</td>
-            </tr>
-          <tr>
-            <td>Map sequences to taxa and counts</td>
-            <td>translates .krak2 file from .kraken2</td>
-            <td>visualize taxonomic or hierarchical data</td>
-            <td>Biological Classification of Data</td>
-            <td>Converts Krona files to CSV</td>
-            <td>Merges the CSV files</td>
-            <td>Visualization</td>
-             </tr>
-        </tbody>
+ 	    <td>Map sequences to taxa and counts</td>
+</tr>
+<tr>
+<td>Kraken2Translate</td>
+ <td>translates .krak2 file from .kraken2</td>
+</tr>
+<tr>
+  <td>Kraken2Krona</td>
+ <td>visualize taxonomic or hierarchical data</td>
+</tr>
+<tr>
+<td>KronaTree</td>
+   <td>Biological Classification of Data</td>
+</tr>
+<tr>
+<td>KronaCSV</td>
+  <td>Converts Krona files to CSV</td>
+</tr>
+<tr>
+<td>CSVMerge</td>
+ <td>Merges the CSV files</td>
+</tr>
+<tr>
+ <td>KronaGram</td>
+  <td>Visualization</td>
+</tr>
       </table>
-    </div>
-    
-    <div class="section">
+<h9>RESULTS</h9>
+      <p>
+Kraken2: Input for Kraken2 plugin is a textfile which contains the DNA Sequencing in fastq file format and the output is in [.krak2] format. Kraken to Maps the sequences to human or non-human taxa. 
+</p>
+<pre>Input Plugin format is written as below.</pre>
+<pre>Output is shown as below the sequences are classified into human [87.13%] and bacterial [12.87%]</pre>
+<p>
+Kraken2Translate: Input for Kraken2Translate plugin is a parameters.kraken2translate.txt which contains the output of Kraken2 with .Krak2 file format and the output is in [.kraken2] format. Kraken2Translate is a file converter to convert .Krak2 file to .Kraken2
+</p>
+<pre>Input Plugin format and text file format is written as below.
+</pre>
+<pre>Output is a translated .Kraken2 file format file of input .krak2 in txt format
+</pre>
+
+<h9>CONCLUSION</h9>
+      <p>Below mentioned is a pipeline for the Paper “Microbiome analyses of blood and tissues suggest cancer diagnostic approach | Nature” when raw DNA sequences are given as input and this gives us the classified samples for each biological classification and the types of microbial signatures that come under each classification to easily identify which sample has which microbial signature present in his blood and tissues.So, when we considering healthy DNA samples and if any of the sample is classified to these microbial signatures that means there is a probability that the person is affected with cancer and is in the initial stage Ia or IIC and can be diagnosed in the early stage.
+</p>
+<h10>FUTURE WORK</h10>
+      <p>As we don’t have the data to classify the microbial signature into types of cancer future work is required to identify what type of cancer is present in the DNA Sequences. Below models can be used in future work.
+</p>
+<pre>
+Lefse (for a better idea of differentiating taxa)
+Networks (for ecological relationships)
+Machine Learning (with taxa abundances as features)
+</pre>
+<h11>CONTRIBUTIONS</h11>
+      <p>Prof Trevor Cickovski My mentor, I thank him for supporting and helping me to understand the paper and the biological terminology and helped me understand how PluMA works and how it should be used. 
+ 
+Dr. Giri Narasimhan Our Project head, I thank him for helping me in improving my Presentation skills and how to present my work and what to present. 
+</p>
+<h12>REFERENCES</h12>
+      <h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h13>Relative URLs</h13>
+<p><a href="https://biorg.cis.fiu.edu/pluma/plugins.html ">PluMA Plugin pool</a></p>
+<p><<a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
+diagnostic approach | Nature</a></p>
+</body>
+</html>
+   
