@@ -116,18 +116,50 @@ tr:nth-child(even) {
 <hr>
 
 <h2><b> RESULTS </b></h2>
-      <p>
-Kraken2: Input for Kraken2 plugin is a textfile which contains the DNA Sequencing in fastq file format and the output is in [.krak2] format. Kraken to Maps the sequences to human or non-human taxa. 
-</p>
-<pre>Input Plugin format is written as below.</pre>
-<pre>Output is shown as below the sequences are classified into human [87.13%] and bacterial [12.87%]</pre>
-<p>
-Kraken2Translate: Input for Kraken2Translate plugin is a parameters.kraken2translate.txt which contains the output of Kraken2 with .Krak2 file format and the output is in [.kraken2] format. Kraken2Translate is a file converter to convert .Krak2 file to .Kraken2
-</p>
-<pre>Input Plugin format and text file format is written as below.
+      <p>Kraken2: Input for Kraken2 plugin is a textfile which contains the DNA Sequencing in fastq file format and the output is in [.krak2] format. Kraken to Maps the sequences to human or non-human taxa. </p>
+<p>Input Plugin format is written as below.</p>
+<p>Output is shown as below the sequences are classified into human [87.13%] and bacterial [12.87%]</p>
+<p>Kraken2Translate: Input for Kraken2Translate plugin is a parameters.kraken2translate.txt which contains the output of Kraken2 with .Krak2 file format and the output is in [.kraken2] format. Kraken2Translate is a file converter to convert .Krak2 file to .Kraken2</p>
+<p>Input Plugin format and text file format is written as below.</p>
+<p>Output is a translated .Kraken2 file format file of input .krak2 in txt format</p>
+<p>Kraken2Krona: Input for Kraken2Krona plugin is an output file of Kraken2Translate which is a .Kraken2 file format and the output is in [.krona] format. Kraken2 Krona  Maps the sequences of non-human taxa into biological classification.</p>
+<p>Input Plugin format is written as below</p>
+<p>Output is shown as below </p>
+<p>KronaTree: Input for KronaTree plugin is an output file from Kraken2Krona which is a .krona file format and the output is text file format with the syntax name output. This Plugin Maps into biological classification separately into Kingdom, Phylum, class, order , Family genus, Species,strain. </p>
+ <p>Input Plugin format is written as below</p>
+<p>Output is shown as below </p>
+<pre>
+Output.Kingdom.txt
+Output.Phylum.txt
+Output.Class.txt
+Output.Order.txt
+Output.Family.txt
+Output.Genus.txt
+Output.Species.txt
+Output.Strain.txt
 </pre>
-<pre>Output is a translated .Kraken2 file format file of input .krak2 in txt format
-</pre>
+<p>KronaCSV: Input for Krona2CSV plugin is an output file from Kraken2Krona which is a .krona file format and the output is CSV file format with the syntax name Sample.</p>
+ 
+<p>Input Plugin format is written as below</p>
+<p>Output is shown as below </p>
+ 
+<pre>Sample.Kingdom.csv
+Sample.Phylum.csv
+Sample.Class.csv
+Sample.Order.csv
+Sample.Family.csv
+Sample.Genus.csv
+Sample.Species.csv
+Sample.Strain.csv</pre>
+ 
+<p>CSVMerge: Input for CSVMerge plugin is an output file from Krona2CSV which is a .csv file in files.txt file and the output is merged CSV file format with the syntax name output.merged.csv with number of samples in each biological classification. </p>
+ 
+<p>Input Plugin format is written as below</p>
+<p>Output is shown as below </p>
+<p>KronaGram: Input for KronaGram plugin is an output file from Kraken2Krona which is a .krona file format and the output is the visualization of the classified DNA Sequences into biological classification. </p>
+ 
+<p>Input Plugin format is written as below
+</p>
 <hr>
 
 <h2><b> CONCLUSION </b></h2>
