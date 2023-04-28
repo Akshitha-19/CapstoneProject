@@ -133,8 +133,10 @@ tr:nth-child(even) {
 		<p>Input Plugin format is written as below</p>
 	<pre style="background-color:yellow;">plugin Kraken2Krona  inputfile output.kraken2 outputfile output.krona</pre> 
 		<p>Output is shown as below </p>
+	 
 	<p>KronaTree: Input for KronaTree plugin is an output file from Kraken2Krona which is a .krona file format and the output is text file format with the syntax name output. This Plugin Maps into biological classification separately into Kingdom, Phylum, class, order , Family genus, Species,strain. </p>
 		 <p>Input Plugin format is written as below</p>
+	 <pre style="background-color:yellow;">plugin KronaTree inputfile output.krona outputfile output</pre> 
 		 <p>Output is shown as below </p>
 <pre style="background-color:Tomato;">
 Output.Kingdom.txt
@@ -148,6 +150,7 @@ Output.Strain.txt
 </pre>
 	<p>KronaCSV: Input for Krona2CSV plugin is an output file from Kraken2Krona which is a .krona file format and the output is CSV file format with the syntax name Sample.</p>
 		<p>Input Plugin format is written as below</p>
+	  <pre style="background-color:yellow;">plugin Krona2CSV inputfile output.krona outputfile sample</pre> 
 		<p>Output is shown as below </p>
 <pre style="background-color:Tomato;">
 Sample.Kingdom.csv
@@ -162,9 +165,11 @@ Sample.Strain.csv
  
 	<p>CSVMerge: Input for CSVMerge plugin is an output file from Krona2CSV which is a .csv file in files.txt file and the output is merged CSV file format with the syntax name output.merged.csv with number of samples in each biological classification. </p>
 		<p>Input Plugin format is written as below</p>
+	 <pre style="background-color:yellow;">plugin CSVMerge inputfile files.txt outputfile output.merged.csv</pre> 
 		<p>Output is shown as below </p>
 	<p>KronaGram: Input for KronaGram plugin is an output file from Kraken2Krona which is a .krona file format and the output is the visualization of the classified DNA Sequences into biological classification. </p>
  		<p>Input Plugin format is written as below</p>
+	 <pre style="background-color:yellow;">plugin KronaGrame inputfile Kronafiles.txt outputfile KronaGram.html</pre> 
 		<p>Here are the Outputs of 3 different data sequencing samples from European Nucleotide Archive</p>
 		
 <iframe src="kronagram1.html" width="100%" height="500px"></iframe>
