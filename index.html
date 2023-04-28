@@ -2,25 +2,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><b> Building Pipeline for Bioinformatics Data using PluMA </b></title>
+    <title>Building Pipeline for Bioinformatics Data using PluMA </title>
  </head>
   <body>
 
-<h1><b> OVERVIEW AND BACKGROUND </b></h1>
+<h1>Building Pipeline for Bioinformatics Data using PluMA</h1>
+<h2><b> OVERVIEW AND BACKGROUND </b></h2>
       <p>The objective of PluMA is to make it easy for developers to create adaptable and lightweight analysis pipelines. These pipelines allow developers to incorporate new algorithms in their preferred programming language and debug them alongside other stages in the pipeline that might use different file formats and programming languages. To achieve this goal, PluMA uses plugins which are available in a large collection in its plugin pool. These plugins are written in various programming languages and can be executed sequentially to form a pipeline. PluMA allows users to easily add, remove, or replace plugins using its user interface. Since plugins are dynamically loaded, users can download PluMA and only the plugins they require from the plugin pool to assemble their pipeline. Furthermore, PluMA provides plugins for both CPU and GPU implementations.</p>
 <hr>
 
-<h1><b> GOAL </b></h1>
+<h2><b> GOAL </b></h2>
        <p>Construct a Pipeline for the Paper </p>
 <a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a>
 <hr>
        
- <h1><b> OBJECTIVE <b></h1>
+ <h2><b> OBJECTIVE <b></h2>
         <p> The objective of PluMA is to simplify the creation of adaptable and lightweight analysis pipelines that can integrate new algorithms in different programming languages and file formats. PluMA uses plugins, with a collection of pre-existing plugins available, implemented in various programming languages and for both CPU and GPU, that can be run sequentially to form a pipeline. The plugins can be easily added, removed, or replaced through a user interface, and dynamically loaded, enabling users to assemble pipelines quickly and efficiently. Transforming microbiome analysis from individual to community-driven. </p>
 <hr>
         
-<h1><b> MOTIVATION </b></h1>
+<h2><b> MOTIVATION </b></h2>
         <p> The Motivation of PluMA is: </p>
           <pre>
           Interoperability of programming languages.
@@ -30,7 +31,7 @@ diagnostic approach | Nature</a>
           </pre>
 <hr>
         
-<h1><b> CHALLENGES </b></h1>
+<h2><b> CHALLENGES </b></h2>
          <p>Few Challenges of PluMA is:</p>
           <pre>
           Clone the Repository.
@@ -40,7 +41,7 @@ diagnostic approach | Nature</a>
          </pre>
 <hr>
 	
-<h1><b> DATA SOURCES </b></h1>
+<h2><b> DATA SOURCES </b></h2>
          <p> Paper worked on :</p>
 <a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a>
@@ -48,7 +49,7 @@ diagnostic approach | Nature</a>
           Authors: “Gregory D. Poore, Evguenia Kopylova, Qiyun Zhu, Carolina Carpenter, Serena Fraraccio, Stephen Wandro, Tomasz Kosciolek, Stefan Janssen, Jessica Metcalf, Se Jin Song, Jad Kanbar, Sandrine Miller-Montgomery, Robert Heaton, Rana Mckay, Sandip Pravin Patel, Austin D. Swafford & Rob Knight”
          </pre>
 <hr>
-<h1><b> DESCRIPTION </b></h1>
+<h2><b> DESCRIPTION </b></h2>
       <p> The researchers discovered that they could identify specific patterns of microorganisms in both cancer tissues and blood samples from cancer patients. These patterns, called microbial signatures, were still able to predict the presence of cancer even in early-stage cases and in situations where traditional genetic tests may not be effective. In other words, these microbial signatures were found in both cancer tissues and blood samples, and they were still able to accurately indicate the presence of cancer even in early stages of the disease or when other standard genetic tests may not provide reliable results. Considering the 5 samples each from the below mentioned data from European Nucleotide Archive.
 </p>
 <pre>
@@ -114,7 +115,7 @@ tr:nth-child(even) {
       </table>
 <hr>
 
-<h1><b> RESULTS </b></h1>
+<h2><b> RESULTS </b></h2>
       <p>
 Kraken2: Input for Kraken2 plugin is a textfile which contains the DNA Sequencing in fastq file format and the output is in [.krak2] format. Kraken to Maps the sequences to human or non-human taxa. 
 </p>
@@ -129,11 +130,11 @@ Kraken2Translate: Input for Kraken2Translate plugin is a parameters.kraken2trans
 </pre>
 <hr>
 
-<h1><b> CONCLUSION </b></h1>
+<h2><b> CONCLUSION </b></h2>
       <p>Below mentioned is a pipeline for the Paper “Microbiome analyses of blood and tissues suggest cancer diagnostic approach | Nature” when raw DNA sequences are given as input and this gives us the classified samples for each biological classification and the types of microbial signatures that come under each classification to easily identify which sample has which microbial signature present in his blood and tissues.So, when we considering healthy DNA samples and if any of the sample is classified to these microbial signatures that means there is a probability that the person is affected with cancer and is in the initial stage Ia or IIC and can be diagnosed in the early stage.</p>
 <hr>
 
-<h1><b> FUTURE WORK </b></h1>
+<h2><b> FUTURE WORK </b></h2>
       <p>As we don’t have the data to classify the microbial signature into types of cancer future work is required to identify what type of cancer is present in the DNA Sequences. Below models can be used in future work.</p>
 <pre>
 Lefse (for a better idea of differentiating taxa)
@@ -142,16 +143,17 @@ Machine Learning (with taxa abundances as features)
 </pre>
 <hr>
 
-<h1><b> CONTRIBUTIONS </b></h1>
-      <p>Prof Trevor Cickovski My mentor, I thank him for supporting and helping me to understand the paper and the biological terminology and helped me understand how PluMA works and how it should be used. </p>
- <p>Dr. Giri Narasimhan Our Project head, I thank him for helping me in improving my Presentation skills and how to present my work and what to present. 
+<h2><b> CONTRIBUTIONS </b></h2>
+      <p> Prof Trevor Cickovski My mentor, I thank him for supporting and helping me to understand the paper and the biological terminology and helped me understand how PluMA works and how it should be used. </p>
+ <p> Dr. Giri Narasimhan Our Project head, I thank him for helping me in improving my Presentation skills and how to present my work and what to present. 
 </p>
 <hr>
 
-<h1><b> REFERENCES </b></h1>
+<h2><b> REFERENCES </b></h2>
 <p><a href="https://biorg.cis.fiu.edu/pluma/plugins.html ">PluMA Plugin pool</a></p>
 <p><a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a></p>
 
 </body>
 </html>
+ 
