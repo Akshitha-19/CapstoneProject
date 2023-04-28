@@ -179,15 +179,21 @@ Sample.Strain.csv
 <hr>
 
 <h2><b> CONCLUSION </b></h2>
-      <p>Below mentioned is a pipeline for the Paper “Microbiome analyses of blood and tissues suggest cancer diagnostic approach | Nature” when raw DNA sequences are given as input and this gives us the classified samples for each biological classification and the types of microbial signatures that come under each classification to easily identify which sample has which microbial signature present in his blood and tissues.So, when we considering healthy DNA samples and if any of the sample is classified to these microbial signatures that means there is a probability that the person is affected with cancer and is in the initial stage Ia or IIC and can be diagnosed in the early stage.</p>
-	  <pre style="background-color:pink;”>Prefix pipelines/Kraken2/test/ </pre>
-<pre style="background-color:pink;”>Plugin Kraken2 inputfile testfiles.txt outputfile taxa.krak2</pre>
-<pre style="background-color:pink;”>Plugin Kraken2Translate inputfile parameters.kraken2translate.txt outputfile output.kraken2</pre>
-<pre style="background-color:pink;”>Plugin Kraken2Krona inputfile output.kraken2 outputfile output.krona </pre>
-<pre style="background-color:pink;”>Plugin KronaTree inputfile output.krona outputfile output</pre>
-<pre style="background-color:pink;”>Plugin Krona2CSV inputfile output.krona outputfile sample</pre>
-<pre style="background-color:pink;”>Plugin CSVMerge inputfile files.txt outputfile sample.merged.txt</pre>
-<pre style="background-color:pink;”>Plugin KronaGram inputfile kronafiles.txt outputfile kronagram.html </pre>
+      <p>Below mentioned is a pipeline for the Paper “Microbiome analyses of blood and tissues suggest cancer diagnostic approach | Nature” 
+	      when raw DNA sequences are given as input and this gives us the classified samples for each biological classification and the types of 
+	      microbial signatures that come under each classification to easily identify which sample has which microbial signature 
+	      present in his blood and tissues.So, when we considering healthy DNA samples and if any of the sample is classified to these microbial signatures 
+	      that means there is a probability that the person is affected with cancer and is in the initial stage Ia or IIC and can be diagnosed in the early stage.</p>
+<style="background-color:pink;”>
+<pre>Prefix pipelines/Kraken2/test/ </pre>
+<pre>Plugin Kraken2 inputfile testfiles.txt outputfile taxa.krak2</pre>
+<pre>Plugin Kraken2Translate inputfile parameters.kraken2translate.txt outputfile output.kraken2 </pre>
+<pre>Plugin Kraken2Krona inputfile output.kraken2 outputfile output.krona </pre>
+<pre>Plugin KronaTree inputfile output.krona outputfile output</pre>
+<pre>Plugin Krona2CSV inputfile output.krona outputfile sample</pre>
+<pre>Plugin CSVMerge inputfile files.txt outputfile sample.merged.txt</pre>
+<pre>Plugin KronaGram inputfile kronafiles.txt outputfile kronagram.html </pre>
+	</style="background-color:pink;”>
 <hr>
 
 <h2><b> FUTURE WORK </b></h2>
@@ -206,7 +212,7 @@ Machine Learning (with taxa abundances as features)
 <hr>
 
 <h2><b> REFERENCES </b></h2>
-<p> <a href="https://biorg.cis.fiu.edu/pluma/plugins.html ">PluMA Plugin pool</a> </p>
+<p><a href="https://biorg.cis.fiu.edu/pluma/plugins.html ">PluMA Plugin pool</a> </p>
 <p><a href="https://www.nature.com/articles/s41586-020-2095-1">Microbiome analyses of blood and tissues suggest cancer
 diagnostic approach | Nature</a></p>
 
