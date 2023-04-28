@@ -117,9 +117,12 @@ tr:nth-child(even) {
 <h2><b> RESULTS </b></h2>
       	<p>Kraken2: Input for Kraken2 plugin is a textfile which contains the DNA Sequencing in fastq file format and the output is in [.krak2] format. Kraken to Maps the sequences to human or non-human taxa. </p>
 		<p>Input Plugin format is written as below.</p>
+<pre style="background-color:Tomato;">plugin Kraken2  input file testfiles.txt outputfile taxa.krak2</pre>
 		<p>Output is shown as below the sequences are classified into human [87.13%] and bacterial [12.87%]</p>
 	<p>Kraken2Translate: Input for Kraken2Translate plugin is a parameters.kraken2translate.txt which contains the output of Kraken2 with .Krak2 file format and the output is in [.kraken2] format. Kraken2Translate is a file converter to convert .Krak2 file to .Kraken2</p>
-		<p>Input Plugin format and text file format is written as below.</p>
+		<p >Input Plugin format and text file format is written as below.</p>
+<pre style="background-color:Tomato;">database        /biorg/data/DB/KRAKEN2/Bacteria
+					kraken  taxa.krak2</pre>
 		<p>Output is a translated .Kraken2 file format file of input .krak2 in txt format</p>
 	<p>Kraken2Krona: Input for Kraken2Krona plugin is an output file of Kraken2Translate which is a .Kraken2 file format and the output is in [.krona] format. Kraken2 Krona  Maps the sequences of non-human taxa into biological classification.</p>
 		<p>Input Plugin format is written as below</p>
@@ -190,3 +193,4 @@ diagnostic approach | Nature</a></p>
 
 </body>
 </html>
+  
